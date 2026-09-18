@@ -35,7 +35,7 @@ app.add_middleware(
 # --------------------------------
 
 BASE_DIR = Path(__file__).resolve().parent
-MODEL_PATH = BASE_DIR.parent / "e_waste_final_v3_best.pt"
+MODEL_PATH = BASE_DIR / "e_waste_final_v3_best.pt"
 
 if not MODEL_PATH.exists():
     raise FileNotFoundError(
